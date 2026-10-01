@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto · Pixel Selva</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="contenedor nav" aria-label="Principal">
+      <a href="index.html" class="logo">Pixel<span>Selva</span></a>
+      <ul class="menu" id="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Quiénes somos</a></li>
+        <li><a href="portafolio.html">Portafolio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contacto.html" class="activo">Contacto</a></li>
+      </ul>
+      <div class="acciones">
+        <button class="icono-btn" id="btnTema" type="button">🌙 Oscuro</button>
+        <button class="icono-btn" id="btnMenu" type="button" aria-label="Abrir menú">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="contenedor">
+    <section class="dos-col">
+      <div>
+        <h1>Hablemos.</h1>
+        <p class="lead">Cuéntanos qué quieres construir y te respondemos en menos de 48 horas.</p>
+        <p><strong>Correo:</strong> hola@pixelselva.example</p>
+        <p><strong>Horario:</strong> lunes a viernes, 8:00 a 17:00</p>
+      </div>
+
+      <form class="panel" id="formContacto" novalidate>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" autocomplete="name">
+        <div class="error" id="error-nombre"></div>
+
+        <label for="correo">Correo</label>
+        <input type="email" id="correo" name="correo" autocomplete="email">
+        <div class="error" id="error-correo"></div>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+        <div class="error" id="error-mensaje"></div>
+
+        <button class="btn" type="submit" style="margin-top:1rem">Enviar mensaje</button>
+        <div class="exito" id="exito" role="status"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer><p>© 2026 Pixel Selva · Diseño web con raíces</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>

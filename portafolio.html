@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portafolio · Pixel Selva</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="contenedor nav" aria-label="Principal">
+      <a href="index.html" class="logo">Pixel<span>Selva</span></a>
+      <ul class="menu" id="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Quiénes somos</a></li>
+        <li><a href="portafolio.html" class="activo">Portafolio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <div class="acciones">
+        <button class="icono-btn" id="btnTema" type="button">🌙 Oscuro</button>
+        <button class="icono-btn" id="btnMenu" type="button" aria-label="Abrir menú">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="contenedor">
+    <section>
+      <h1>Proyectos que ya florecieron.</h1>
+      <p class="lead">Una muestra de lo que hemos construido. Filtra por tipo de proyecto.</p>
+
+      <div class="filtros">
+        <button class="filtro activo" data-cat="todos" type="button">Todos</button>
+        <button class="filtro" data-cat="tienda" type="button">Tiendas</button>
+        <button class="filtro" data-cat="landing" type="button">Landing pages</button>
+        <button class="filtro" data-cat="app" type="button">Aplicaciones</button>
+      </div>
+
+      <div class="rejilla">
+        <article class="tarjeta proyecto" data-cat="tienda">
+          <div class="imagen c1">Café</div>
+          <div class="info"><h3>Café del Valle</h3><p>Tienda en línea para un tostador artesanal.</p></div>
+        </article>
+        <article class="tarjeta proyecto" data-cat="landing">
+          <div class="imagen c2">Mango</div>
+          <div class="info"><h3>Festival Mango</h3><p>Página de evento con boletería y agenda.</p></div>
+        </article>
+        <article class="tarjeta proyecto" data-cat="app">
+          <div class="imagen c3">Río</div>
+          <div class="info"><h3>Reserva Río</h3><p>App de reservas para turismo de naturaleza.</p></div>
+        </article>
+        <article class="tarjeta proyecto" data-cat="tienda">
+          <div class="imagen c4">Barro</div>
+          <div class="info"><h3>Barro y Fuego</h3><p>Catálogo de cerámica hecha a mano.</p></div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer><p>© 2026 Pixel Selva · Diseño web con raíces</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Servicios · Pixel Selva</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="contenedor nav" aria-label="Principal">
+      <a href="index.html" class="logo">Pixel<span>Selva</span></a>
+      <ul class="menu" id="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Quiénes somos</a></li>
+        <li><a href="portafolio.html">Portafolio</a></li>
+        <li><a href="servicios.html" class="activo">Servicios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <div class="acciones">
+        <button class="icono-btn" id="btnTema" type="button">🌙 Oscuro</button>
+        <button class="icono-btn" id="btnMenu" type="button" aria-label="Abrir menú">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="contenedor">
+    <section>
+      <h1>Elige qué necesitas.</h1>
+      <p class="lead">Tres servicios principales y un cotizador para que sepas el precio aproximado al instante.</p>
+      <div class="rejilla">
+        <article class="tarjeta"><h3>Sitio web</h3><p>Páginas informativas y corporativas.</p></article>
+        <article class="tarjeta"><h3>Tienda en línea</h3><p>Catálogo, carrito y medios de pago.</p></article>
+        <article class="tarjeta"><h3>Aplicación web</h3><p>Herramientas a la medida de tu negocio.</p></article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Cotizador</h2>
+      <form class="panel" id="cotizador">
+        <label for="tipo">Tipo de proyecto</label>
+        <select id="tipo">
+          <option value="600000">Sitio web</option>
+          <option value="1500000">Tienda en línea</option>
+          <option value="2500000">Aplicación web</option>
+        </select>
+
+        <label for="paginas">Número de páginas: <strong id="paginasValor">1</strong></label>
+        <input type="range" id="paginas" min="1" max="10" value="1">
+
+        <p style="margin-top:1rem">Extras</p>
+        <div class="checks">
+          <label><input type="checkbox" class="extra" value="200000"> Modo oscuro</label>
+          <label><input type="checkbox" class="extra" value="350000"> Formulario con validación</label>
+          <label><input type="checkbox" class="extra" value="450000"> Animaciones personalizadas</label>
+        </div>
+
+        <p>Precio aproximado</p>
+        <div class="total" id="total" aria-live="polite">$0 COP</div>
+        <a class="btn" href="contacto.html" style="margin-top:1rem">Pedir esta cotización</a>
+      </form>
+    </section>
+  </main>
+
+  <footer><p>© 2026 Pixel Selva · Diseño web con raíces</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>

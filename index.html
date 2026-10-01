@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pixel Selva · Webs que crecen</title>
+  <meta name="description" content="Estudio de diseño web que hace crecer tu proyecto.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="contenedor nav" aria-label="Principal">
+      <a href="index.html" class="logo">Pixel<span>Selva</span></a>
+      <ul class="menu" id="menu">
+        <li><a href="index.html" class="activo">Inicio</a></li>
+        <li><a href="nosotros.html">Quiénes somos</a></li>
+        <li><a href="portafolio.html">Portafolio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <div class="acciones">
+        <button class="icono-btn" id="btnTema" type="button">🌙 Oscuro</button>
+        <button class="icono-btn" id="btnMenu" type="button" aria-label="Abrir menú">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="contenedor">
+    <section class="hero">
+      <div>
+        <h1>Webs que echan raíces y crecen.</h1>
+        <p class="lead">Diseñamos y programamos sitios rápidos, claros y fáciles de usar para negocios que quieren crecer en internet.</p>
+        <a class="btn" href="servicios.html">Cotiza tu sitio</a>
+        <a class="btn sec" href="portafolio.html">Ver proyectos</a>
+      </div>
+
+      <div class="planta-caja">
+        <svg id="planta" viewBox="0 0 200 280" role="img" aria-label="Planta que crece">
+          <ellipse cx="100" cy="266" rx="60" ry="10" fill="#0a1510"/>
+          <rect x="60" y="250" width="80" height="16" rx="6" fill="#a3743f"/>
+          <g id="tallo"><rect x="97" y="20" width="6" height="240" rx="3" fill="#5fcb8a"/></g>
+          <ellipse class="hojaSVG" cx="75" cy="200" rx="22" ry="9" fill="#2f8a57" transform="rotate(-25 75 200)"/>
+          <ellipse class="hojaSVG" cx="125" cy="165" rx="22" ry="9" fill="#5fcb8a" transform="rotate(25 125 165)"/>
+          <ellipse class="hojaSVG" cx="72" cy="125" rx="22" ry="9" fill="#2f8a57" transform="rotate(-25 72 125)"/>
+          <g id="flor" style="opacity:0; transition: opacity .6s .5s">
+            <circle cx="100" cy="30" r="16" fill="#f2a03d"/>
+            <circle cx="100" cy="30" r="6" fill="#14382b"/>
+          </g>
+        </svg>
+        <p id="mensajePlanta" aria-live="polite">Una semilla. Toda web empieza así: con una idea.</p>
+        <button class="btn" id="btnRegar" type="button">💧 Regar</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>Lo que hacemos mejor</h2>
+      <div class="rejilla">
+        <article class="tarjeta"><h3>Diseño claro</h3><p>Interfaces limpias que tus clientes entienden a la primera.</p></article>
+        <article class="tarjeta"><h3>Funciona en todo</h3><p>Tu sitio se ve bien en celular, tablet y computador.</p></article>
+        <article class="tarjeta"><h3>Carga rápido</h3><p>Código liviano para que nadie se canse de esperar.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer><p>© 2026 Pixel Selva · Diseño web con raíces</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
